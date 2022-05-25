@@ -1,0 +1,17 @@
+{
+    "name": "Bionic PDF Reader",
+    "description": "Replaces the default PDF viewer to allow bionic reading.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "bionic.js"
+            ]
+        }
+    ]
+}
